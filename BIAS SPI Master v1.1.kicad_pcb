@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 35)
+    (drawings 34)
     (tracks 713)
     (zones 0)
     (modules 32)
@@ -1006,7 +1006,7 @@
     (fp_text reference J2 (at 3.81 21.59) (layer F.SilkS)
       (effects (font (size 2.032 2.032) (thickness 0.3048)))
     )
-    (fp_text value "SPI Ouput" (at 11.43 8.89 90) (layer F.SilkS)
+    (fp_text value "SPI Output" (at 11.43 8.89 90) (layer F.SilkS)
       (effects (font (size 1.778 1.778) (thickness 0.254)))
     )
     (fp_text user %R (at 3.81 8.89) (layer F.Fab)
@@ -1955,9 +1955,6 @@
     )
   )
 
-  (gr_text "This is my first PCB and Tom Lemense helped tremendously. He's an awesome dude!" (at 134.62 110.998) (layer B.SilkS)
-    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
-  )
   (gr_poly (pts (xy 178.308 93.726) (xy 175.768 92.456) (xy 175.768 94.996)) (layer F.SilkS) (width 0.1) (tstamp 5DDAB510))
   (gr_text BUSY (at 195.326 81.534) (layer F.SilkS) (tstamp 5DDAB509)
     (effects (font (size 1.524 1.524) (thickness 0.254)))
