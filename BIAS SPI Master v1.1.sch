@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:BIAS SPI Master v1.1-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -174,10 +173,10 @@ F 3 "" H 8250 2200 50  0001 C CNN
 	1    8250 2200
 	0    1    1    0   
 $EndComp
-Text Label 8350 2650 3    50   ~ 0
+Text Label 8800 2300 3    50   ~ 0
 Q3
 Wire Wire Line
-	8350 2650 8350 2850
+	8800 2300 8800 2450
 Text Label 4550 3750 0    50   ~ 0
 ~START
 Wire Wire Line
@@ -651,22 +650,18 @@ Wire Wire Line
 $Comp
 L Device:Jumper_NC_Dual JP1
 U 1 1 5DEF152C
-P 8350 3100
-F 0 "JP1" V 8304 3202 50  0000 L CNN
-F 1 "CLK Select" V 8395 3202 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 3100 50  0001 C CNN
-F 3 "~" H 8350 3100 50  0001 C CNN
-	1    8350 3100
+P 8800 3100
+F 0 "JP1" V 8754 3202 50  0000 L CNN
+F 1 "CLK Select" V 8845 3202 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8800 3100 50  0001 C CNN
+F 3 "~" H 8800 3100 50  0001 C CNN
+	1    8800 3100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8350 3350 8350 3550
-Text Label 8350 3550 1    50   ~ 0
+	8800 3350 8800 3400
+Text Label 8800 3850 1    50   ~ 0
 M7
-Wire Wire Line
-	8250 3100 8000 3100
-Wire Wire Line
-	8000 3100 8000 2500
 Wire Wire Line
 	8000 2500 7600 2500
 Text Label 1850 3000 2    50   ~ 0
@@ -1461,4 +1456,61 @@ Wire Wire Line
 Connection ~ 5100 3300
 Wire Wire Line
 	5100 3300 5100 3550
+$Comp
+L Device:C_Small C9
+U 1 1 5F37D89E
+P 8000 3300
+F 0 "C9" H 8092 3346 50  0000 L CNN
+F 1 "100 pF" H 8092 3255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 8000 3300 50  0001 C CNN
+F 3 "~" H 8000 3300 50  0001 C CNN
+	1    8000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F37E4F3
+P 8000 3500
+F 0 "#PWR0106" H 8000 3250 50  0001 C CNN
+F 1 "GND" H 8005 3327 50  0000 C CNN
+F 2 "" H 8000 3500 50  0001 C CNN
+F 3 "" H 8000 3500 50  0001 C CNN
+	1    8000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3400 8000 3500
+$Comp
+L Device:R_US R7
+U 1 1 5F40A979
+P 8800 2600
+F 0 "R7" V 8595 2600 50  0000 C CNN
+F 1 "150" V 8686 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8840 2590 50  0001 C CNN
+F 3 "~" H 8800 2600 50  0001 C CNN
+	1    8800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 5F46BBAB
+P 8800 3550
+F 0 "R8" V 8595 3550 50  0000 C CNN
+F 1 "150" V 8686 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8840 3540 50  0001 C CNN
+F 3 "~" H 8800 3550 50  0001 C CNN
+	1    8800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3700 8800 3850
+Wire Wire Line
+	8800 2750 8800 2850
+Wire Wire Line
+	8000 2500 8000 3100
+Wire Wire Line
+	8700 3100 8000 3100
+Connection ~ 8000 3100
+Wire Wire Line
+	8000 3100 8000 3200
 $EndSCHEMATC
